@@ -1,0 +1,53 @@
+/*------===============-main-style-sheet-==============-----
+Project: Vankine
+Version: 1.0
+Last change: First Release
+Primary use: Insurance
+-----===============-main-style-sheet-==============------*/
+
+/*-------------------Table of contents----------------------
+1) Variables - Css
+2) Theme Test - CSS
+3) Slider - Css
+4) Content - Css
+5) Tab - Css
+6) Option panel - Css
+7) Animations - Css
+8) Form - Css
+9) Global- Css
+10) Header - Css
+11) Page_header - Css
+12) Mobile_menu - Css
+13) Sidebar - Css
+14) Theme_btn - Css
+15) Blog - Css
+16) Pagination - Css
+17) Products - Css
+18) Footer - Css
+-------------------Table of contents----------------------*/
+
+@charset "UTF-8";
+
+@function unicode($str) {
+    @return unquote('"') + unquote(str-insert($str, "\\", 1)) + unquote('"');
+}
+
+@import "theme-css/variables";
+@import "theme-css/theme_test";
+@import "theme-css/slider";
+@import "theme-css/content";
+@import "theme-css/tab";
+@import "theme-css/option_panel";
+@import "theme-css/animations";
+@import "theme-css/form";
+@import "theme-css/global";
+@import "theme-css/header";
+@import "theme-css/page_header";
+@import "theme-css/mobile_menu";
+@import "theme-css/sidebar";
+@import "theme-css/theme_btn";
+@import "theme-css/blog";
+@import "theme-css/pagination";
+@import "theme-css/products";
+@import "theme-css/footer";
+@import "theme-css/custom";
