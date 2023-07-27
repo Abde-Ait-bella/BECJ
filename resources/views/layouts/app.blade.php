@@ -13,13 +13,14 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('assets/css/pop-up.css')}}" type="text/css" />
-
+    <link rel="stylesheet" href="{{asset('assets/css/dashbbord.css')}}" type="text/css" />
     <!-- Scripts -->
+    <script src="{{asset('assets/js/feather.min.js')}}"></script>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm nav-dashbord">
             <div class="container">
                     <a href="{{ url('/') }}"" class="logo navbar-brand">
                         <img  height="40" src="{{url('assets/images/logo/logo-becj-bicolor.png')}}"
@@ -47,7 +48,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                                    {{ Auth::user()->username }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">

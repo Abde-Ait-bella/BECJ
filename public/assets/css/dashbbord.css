@@ -1,0 +1,42 @@
+li #navbarDropdown{
+    color: #181464;
+    text-transform: uppercase;
+}
+li .btn-link{
+    color: #181464;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+div .card-header{
+    background-color: #181464;
+    color: white;
+}
+div .card-header.sous-title{
+    background-color: #1340dd;
+}
+div .card-header.nomber{
+    background-color: #ced4da;
+    color: black;
+}
+form .row{
+    color: #181464;
+}
+.multiplication_sign{
+    position: absolute;
+    color: rgb(173, 20, 20);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: fantasy;
+    margin-left: 5px;
+    border: none;
+    background-color: #f9fbfc;
+    padding: 0;
+    z-index: 0;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+div#app nav.navbar.nav-dashbord{
+    position: sticky;
+}

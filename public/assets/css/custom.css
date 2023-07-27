@@ -1,0 +1,9 @@
+.icon_box_only.type_three .icon_inner .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon_box_only.type_three .icon_inner .icon svg{
+    width: 35px;
+    height: 35px;
+}

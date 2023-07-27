@@ -13,6 +13,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <script src="{{ asset('assets/js/feather.min.js') }}"></script>
+    {{-- <script src="https://unpkg.com/feather-icons"></script> --}}
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -47,6 +49,7 @@
     <link rel="stylesheet" href="assets/css/plugins/uicons-regular-straight.css" type="text/css" media="all" />
     <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="assets/css/plugins/flaticon_vankine.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{asset('assets/css/custom.css')}}">
     <!-- Icon Styles -->
     <!-- styling for demo purpose
     <link rel='stylesheet' href='assets/css/color-3.css' type='text/css' media='all' />
@@ -498,7 +501,8 @@
                                             alt="img" class="imf-fluid" />
 
                                         <div class="fun_facts type_two">
-                                            <h6 class="title_no_a_18"><small>+</small>{{ $apropos->annees_experience }}
+                                            <h6 class="title_no_a_18">
+                                                <small>+</small>{{ $apropos->annees_experience }}
                                             </h6>
                                             <h6 class="title_no_a_26">
                                                 Ans <br />
@@ -580,7 +584,7 @@
                                             <div class="icon_inner trans">
                                                 <div class="d-flex trans">
                                                     <div class="icon trans">
-                                                        <i class="{{ $Sr->icone }}"></i>
+                                                        <i class="" data-feather="{{ $Sr->icone }}"></i>
                                                     </div>
                                                     <div class="content">
                                                         <div class="title_22">
@@ -999,6 +1003,9 @@
         </footer>
         <!--footer end---
         <!----=================Script================---->
+        <script>
+            feather.replace()
+        </script>
         <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/plugins/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="assets/js/plugins/appear.js"></script>

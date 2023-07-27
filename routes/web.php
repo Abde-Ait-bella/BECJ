@@ -31,3 +31,7 @@ Route::prefix('admin')->middleware('auth')->group(function(){
 Auth::routes([
     'register' => false
 ]);
+
+Route::get('/icons', function(){
+    return view('icons');
+});
