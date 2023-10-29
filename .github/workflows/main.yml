@@ -1,0 +1,31 @@
+on:
+  push:
+    branches:
+      - main
+name: Production Deployment
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js 16
+      uses: actions/setup-node@v3
+      with:
+          node-version: "16"
+          cache: "npm"
+    - run: npm i --no-progress
+    - run: npm run build
+    - name: Install composer dependencies
+      run: composer install --prefer-dist --no-progress --no-suggest
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+          server: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          server-dir: dev.becj.net/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
