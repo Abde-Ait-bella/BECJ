@@ -30,6 +30,5 @@ icons.forEach(icn => {
         var value = e.currentTarget.textContent.trim();
         var inputActive = document.querySelector('.icon-input.active');
         inputActive.value = value;
-        console.log(inputActive);
     })
 });

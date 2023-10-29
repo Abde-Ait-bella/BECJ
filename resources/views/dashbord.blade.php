@@ -458,7 +458,6 @@
                                 <div role="button" class="div-icons">
                                     <div class="btn-icons">
                                         <div class="icon">
-                                            {{-- <img src="{{ asset('DataSvg/' . $file) }}" alt="Icon"> --}}
                                             <i data-feather="{{ pathinfo($file, PATHINFO_FILENAME) }}"></i>
                                         </div>
                                         <span class="css-1sns0wc">{{ pathinfo($file, PATHINFO_FILENAME) }}</span>
