@@ -14,11 +14,12 @@ jobs:
       with:
           node-version: "16"
           cache: "npm"
+    - name: 🔨 Build Project
     - run: npm i --no-progress
     - run: npm run build
-    - name: Install composer dependencies
+    - name: 🔨 Install composer dependencies
       run: composer install --prefer-dist --no-progress --no-suggest
-    - name: Sync files
+    - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
           server: ${{ secrets.HOST }}
