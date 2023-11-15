@@ -295,7 +295,7 @@
                                     <ul class="navbar_nav">
                                         <li class="menu-item nav-item">
                                             <a href="#banner" class="nav_link">
-                                                <span class="text-link">aaaaaa</span>
+                                                <span class="text-link">Accueil</span>
                                             </a>
                                         </li>
                                         <li class="menu-item nav-item">
