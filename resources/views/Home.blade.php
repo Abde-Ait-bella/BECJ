@@ -732,8 +732,7 @@
                                             </div>
                                             <div class="forms-field-Dropdown mr_bottom_40">
                                                 <select name="subject">
-                                                    <option value="" class="placeholder" disabled=""
-                                                        selected="selected">Sujettttttttttttttttttttt</option>
+                                                    <option value="" class="placeholder" disabled="" selected="selected">Sujet</option>
                                                     <option value="compta">Comptabilité</option>
                                                     <option value="juridique">Conseil juridique</option>
                                                     <option value="info">Demande d'informations</option>
