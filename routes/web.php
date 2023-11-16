@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\servicesController;
 use App\Http\Controllers\Admin\ApropoController;
 use App\Http\Controllers\Admin\AvisController;
+use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\support\Facades\Auth;
 
@@ -20,6 +21,8 @@ use Illuminate\support\Facades\Auth;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+
+Route::post('/email', [MailController::class, 'index'])->name('email');
 
 Route::prefix('admin')->middleware('auth')->group(function(){
     Route::get('/dashbord', [G_pageController::class, 'index'])->name('dashbord.index');

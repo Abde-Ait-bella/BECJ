@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="assets/css/plugins/uicons-regular-straight.css" type="text/css" media="all" />
     <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="assets/css/plugins/flaticon_vankine.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="{{asset('assets/css/custom.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
     <!-- Icon Styles -->
     <!-- styling for demo purpose
     <link rel='stylesheet' href='assets/css/color-3.css' type='text/css' media='all' />
@@ -634,10 +634,10 @@
                                             <a href="#">
                                                 <svg width="55" height="55" viewBox="0 0 55 55"
                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="28" cy="27" r="20"
-                                                        fill="white"></circle>
-                                                    <circle cx="27.5" cy="27.5" r="27.5"
-                                                        fill="white" fill-opacity="0.1"></circle>
+                                                    <circle cx="28" cy="27" r="20" fill="white">
+                                                    </circle>
+                                                    <circle cx="27.5" cy="27.5" r="27.5" fill="white"
+                                                        fill-opacity="0.1"></circle>
                                                     <path d="M22 33.25L33.25 22M33.25 22H24.8125M33.25 22V30.4375"
                                                         stroke="#1340dd" stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round"></path>
@@ -716,9 +716,10 @@
                                         </div>
                                     </div>
                                     <div class="contact_form_shortcode">
-                                        <form method="post" action="#">
+                                        <form method="post" action={{ route('email') }}>
+                                            @csrf
                                             <div class="forms-field-name mr_bottom_20">
-                                                <input type="text" name="name" placeholder="Nom complet"
+                                                <input type="text" name="nom" placeholder="Nom complet"
                                                     spellcheck="false" required="">
                                             </div>
                                             <div class="forms-field-email mr_bottom_20">
@@ -739,7 +740,8 @@
                                                 </select>
                                             </div>
                                             <div class="forms-field-name mr_bottom_20">
-                                                <textarea name="message" placeholder="Message" style="height: 100px !important" required=""></textarea>
+                                                <input type="text" name="message" placeholder="Message"
+                                                    style="height: 100px !important" required="">
                                             </div>
                                             <button type="submit" class="theme_btn">Envoyer</button>
                                         </form>
