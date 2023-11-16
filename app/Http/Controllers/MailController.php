@@ -17,7 +17,7 @@ class MailController extends Controller
             'message' => $request->message
         ];
 
-        Mail::to('Site@BECJ.com')->send(new Email($mailData));
+        Mail::to('BECJ@gmail.com')->send(new Email($mailData));
         return redirect('/');
     }
 }
