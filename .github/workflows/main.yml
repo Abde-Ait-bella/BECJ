@@ -24,7 +24,6 @@ jobs:
           server: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          server-dir: dev.becj.net/
           exclude: |
             **/.git*
             **/.git*/**
