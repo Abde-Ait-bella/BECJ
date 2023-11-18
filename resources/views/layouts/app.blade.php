@@ -30,6 +30,7 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/pop-up.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('assets/css/dashbbord.css') }}" type="text/css" />
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <!-- Scripts -->
     <script src="{{ asset('assets/js/feather.min.js') }}"></script>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
