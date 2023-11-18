@@ -24,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>Vankine - Just another Html template</title>
     <!-- Fav Icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="assets/images/headLogo.png" type="image/x-icon" />
     <!-- Fav Icon -->
     <!-- Googel Fonts -->
     <link rel="stylesheet"
